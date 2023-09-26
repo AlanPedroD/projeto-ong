@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilos/formulario.css">
+    <script src="https://kit.fontawesome.com/049c2c2b37.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="imagens/logo-branca-oficial.png"
+            alt="logo anjos das ruas cor da fonte preta e fundo transparente"
+          />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" id="home" class="ativo">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="quero-ajudar.html">Quero ajudar</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Você está quase lá !</h1>
+      <form action="">
+        <h2>Formulário de interesse em adoção</h2>
+        <ul>
+          <li>
+            <label for="nome">* Nome</label>
+            <input class="inputs-padrao" type="text" name="nome" id="nome" required autofocus placeholder="Nome"/>
+          </li>
+          <li>
+            <label for="email">* Email</label>
+            <input class="inputs-padrao type="email" name="email" id="email" placeholder="Email" required/>
+          </li>
+          <li>
+            <label for="tel">* Telefone</label>
+            <input class="inputs-padrao type="tel" name="email" id="tel" required placeholder="(xx)xxxxx-xxxx" pattern="\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}"/>
+          </li>
+          <li>
+            <label>Selecione seus interesses</label>
+            <label for="cachorro">Cachorro</label>
+            <input type="checkbox" name="horario" id="cachorro">
+            <label for="gato">Gato</label>
+            <input type="checkbox" name="horario" id="gato">
+          </li>
+
+          <li>
+            <label for="mostrar">Selecione o nome do animal escolhido</label>
+            <select name="mes">
+              <option value="jan">Selecione</option>
+              <option value="jan">Max</option>
+              <option value="Fev">Minerva</option>
+              <option value="Mar">Pingo</option>
+              <option value="Abril">Totó</option>
+              <option value="Maio">Don</option>
+              <option value="Maio">Bidú</option>
+              <option value="Maio">Alladin</option>
+              <option value="Maio">Bob</option>
+              <option value="Maio">Suzi</option>
+              <option value="Maio">Shenna</option>
+              <option value="Maio">Theo</option>
+              <option value="Maio">Maylon</option>
+            </select>
+          </li>
+
+          <li>
+            <label>Agende a sua visita</label>
+            <select name="dia">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="5">6</option>
+              <option value="5">7</option>
+              <option value="5">8</option>
+              <option value="5">9</option>
+              <option value="5">10</option>
+            </select>
+            <select name="mes">
+              <option value="jan">Jan</option>
+              <option value="Fev">Fev</option>
+              <option value="Mar">Mar</option>
+              <option value="Abril">Abril</option>
+              <option value="Maio">Maio</option>
+              <option value="Maio">Junho</option>
+              <option value="Maio">Julho</option>
+              <option value="Maio">Agosto</option>
+              <option value="Maio">Setembro</option>
+              <option value="Maio">Outubro</option>
+              <option value="Maio">Novembro</option>
+              <option value="Maio">Dezembro</option>
+            </select>
+            <select name="ano">
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+            </select>
+          </li>
+          <li class="horarios">
+            <label>Selecione um horário:</label>
+            <label for="manha">Manhã</label>
+            <input type="radio" name="horario" id="manha">
+            <label for="tarde">Tarde</label>
+            <input type="radio" name="horario" id="tarde">
+            <label for="noite">Noite</label>
+            <input type="radio" name="horario" id="noite">
+          </li>
+        </ul>
+        <p class="contrato">
+          <input type="checkbox" name="contrato" id="contrato" required>
+          <label for="contrato">Leia atentamente o Contrato de Responsabilidade</label>
+          <a
+            href="https://www.wonder.legal/br/creation-modele/contrato-adocao-animal-domestico"
+            target=""
+            >Abrir</a
+          >
+        </p>
+        <button class="agendar" type="submit">Agendar visita</button>
+      </form>
+    </main>
+
+    <input type="checkbox" name="" id="mostrar-animais" class="checkbox">
+    <section class="secao-container">
+      <label for="mostrar-animais">Clique aqui para ver os animais disponíveis</label>
+      <div class="container-adocao">
+        <div class="container-photo-adocao">
+          <a href="formulario.html">
+            <img
+              src="imagens/cahorro-01.jpg"
+              alt="imagem de uma gatinho pequeno branco e olhos azuis"
+            />
+          </a>
+          <a href="" class="nome-do-animal">
+            <h3>Max</h3>
+          </a>
+          <p>São Paulo, São Paulo</p>
+        </div>
+        <div class="container-photo-adocao">
+          <a href="formulario.html">
+            <img
+              src="imagens/gato-01.jpg"
+              alt="imagem de um cachorro de pelo marron e branco"
+            />
+          </a>
+          <a href="" class="nome-do-animal">
+            <h3>Minerva</h3>
+          </a>
+          <p>Curitiba, Paraná</p>
+        </div>
+        <div class="container-photo-adocao">
+          <a href="formulario.html">
+            <img
+              src="imagens/cahorro-02.jpg"
+              alt="imagem de um gato rajado de pelos cinza preto e branco"
+            />
+          </a>
+          <a href="" class="nome-do-animal">
+            <h3>Pingo</h3>
+          </a>
+          <p>Niterói, Rio de janeiro</p>
+        </div>
+        <div class="container-photo-adocao">
+          <a href="formulario.html">
+            <img
+              src="imagens/cahorro-03.jpg"
+              alt="imgem de um cachorro junior de cor cinza"
+            />
+          </a>
+          <a href="" class="nome-do-animal">
+            <h3>Totó</h3>
+          </a>
+          <p>Fortaleza, Ceará</p>
+        </div>
+        <div class="container-photo-adocao">
+          <a href="formulario.html">
+            <img
+              src="imagens/gato-02.jpg"
+              alt="imagem de um cachorro de pelo alaranjado e branco"
+            />
+          </a>
+          <a href="" class="nome-do-animal">
+            <h3>Don</h3>
+          </a>
+          <p>Recife, Pernambuco</p>
+        </div>
+        <div class="container-photo-adocao">
+          <a href="formulario.html">
+            <img
+              src="imagens/cahorro-04.jpg"
+              alt="imagem de um gato de cor amarelo e branco"
+            />
+          </a>
+          <a href="" class="nome-do-animal">
+            <h3>Bidú</h3>
+          </a>
+          <p>Goiânia, Goias</p>
+        </div>
+        <div class="container-photo-adocao">
+          <a href="formulario.html">
+            <img
+              src="imagens/gato-03.jpg"
+              alt="imagem de um cachorro de cor marron e branco"
+            />
+          </a>
+          <a href="" class="nome-do-animal">
+            <h3>Aladdin</h3>
+          </a>
+          <p>Manaus, Amazonas</p>
+        </div>
+        <div class="container-photo-adocao">
+          <a href="formulario.html">
+            <img
+              src="imagens/cahorro-05.jpg"
+              alt="imagem de um cachorro pequeno de cor branco"
+            />
+          </a>
+          <a href="" class="nome-do-animal">
+            <h3>Bob</h3>
+          </a>
+          <p>Macapá, Amapá</p>
+        </div>
+        <div class="container-photo-adocao">
+          <a href="formulario.html">
+            <img src="imagens/gato-04.jpg" alt="" />
+          </a>
+          <a href="" class="nome-do-animal">
+            <h3>Suzi</h3>
+          </a>
+          <p>Porto velho, Rondônia</p>
+        </div>
+        <div class="container-photo-adocao">
+          <a href="formulario.html">
+            <img
+              src="imagens/cahorro-06.jpg"
+              alt="imagem de uma cachorra de pelos preto marron e branco"
+            />
+          </a>
+          <a href="" class="nome-do-animal">
+            <h3>Shenna</h3>
+          </a>
+          <p>Belém, Pará</p>
+        </div>
+        <div class="container-photo-adocao">
+          <a href="formulario.html">
+            <img
+              src="imagens/cahorro-07.jpg"
+              alt="imagem de um cachorro pequenino de cor marron e barba branca"
+            />
+          </a>
+          <a href="" class="nome-do-animal">
+            <h3>Theo</h3>
+          </a>
+          <p>Florianópolis, Santa catarina</p>
+        </div>
+        <div class="container-photo-adocao">
+          <a href="formulario.html">
+            <img
+              src="imagens/cahorro-08.jpg"
+              alt="imagem de um cachorro adulto de cor branco e parte de face marron"
+            />
+          </a>
+          <a href="" class="nome-do-animal">
+            <h3>Maylon</h3>
+          </a>
+          <p>Rio branco, Acre</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="logo-e-redes-sociais">
+        <div class="logo">
+          <a href="index.html">
+            <img src="imagens/logo-branca-oficial.png" alt="" />
+          </a> 
+        </div>
+        <div class="redes-sociais">
+          <ul>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-rodape">
+        <ul>
+          <li><a href="index.html" class="ativo">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="formulario.html">Adotar</a></li>
+          <li><a href="quero-ajudar.html">Quero ajudar</a></li>
+        </ul>
+      </div>
+      <div class="direitos-reservados">
+        <a href="#adocao">Adotar agora</a>
+        <p>Tel: 99 999999</p>
+        <p>Todos os direitos-reservados</p>
+      </div>
+    </footer>
+  </body>
+</html>

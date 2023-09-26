@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./imagens/favicon-32x32.png" type="image/x-icon">
+    
+    <script src="https://kit.fontawesome.com/049c2c2b37.js" crossorigin="anonymous"></script>
+    
+    <title>Home projeto integrador</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="estilos/alan.style.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="imagens/logo-branca-oficial.png"
+            alt="logo anjos das ruas cor da fonte preta e fundo transparente"
+          />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" id="home" class="ativo">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="formulario.html">Adotar</a></li>
+          <li><a href="quero-ajudar.html">Quero ajudar</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li class="icone-theme">
+              <input type="checkbox" name="change-theme" id="change-theme"/>
+              <label for="change-theme">
+                  <i class="bi bi-sun"></i>
+                  <i class="bi bi-moon"></i>
+              </label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="banner-principal">
+          <div class="container">
+              <div class="textos-banner">
+                <h1>Não compre, adote !</h1>
+                <h2>
+                    A Anjos das ruas é um site em que ONGs e Protetores de todo o Brasil podem divulgar cães e gatos para adoção.
+                </h2>
+              </div>
+          </div>
+          <div class="botoes">
+            <a href="#adocao">
+                <button role="button" class="botao">
+                        Adote agora
+                </button>
+            </a>
+        </div>
+      </div>
+  </main>
+  <article class="artigo">
+    <div class="texto-artigo">
+      <h2>
+        Conheça a Anjos das ruas
+      </h2>
+      <p>
+        Nós fazemos a conexão entre quem deseja adotar um pet com uma rede de mais de 129 ONGs e protetores parceiros. A Anjos das ruas é um site em que ONGs e Protetores de todo o Brasil podem divulgar cães e gatos para adoção. O projeto existia informalmente desde 2012, mas em 2018 nos registramos oficialmente como uma Associação! Isso nos permite fazer grandes parcerias com empresas e estamos bem animados sobre o que vem por aí!
+      </p>
+    </div>
+  </article>
+  <article class="fundadores">
+    <h3 class="frase-ong">"A compaixão para com os animais é das mais nobres virtudes da natureza humana."</h3>
+    <div class="colaboradores">
+      <div class="container-photo-fundadores">
+        <div>
+          <img src="https://placehold.co/238x238" alt="">
+        </div>
+        <h3>XXXXXXXXXX</h3>
+        <p>Responsável Tecnica(o)</p>
+        <ul>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </ul>
+      </div>
+      <div class="container-photo-fundadores">
+        <div>
+          <img src="https://placehold.co/238x238" alt="">
+        </div>
+        <h3>Alan Pedro</h3>
+        <p>Web Design</p>
+        <ul>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </ul>
+      </div>
+      <div class="container-photo-fundadores">
+        <div>
+          <img src="https://placehold.co/238x238" alt="">
+        </div>
+        <h3>ZZZZZZZZZZ</h3>
+        <p>Marketing</p>
+        <ul>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </ul>
+      </div>
+    </div>
+  </article>
+  <div class="titulo-adocao">
+    <h2 id="adocao">Encontre o seu novo amigo</h2>
+  </div>
+  <div class="div-formulario">
+    <form action="" class="formulario">
+      <select name="especies" id="especise">
+        <option value="todas as especies">Todas as especies</option>
+        <option value="cachorro">Cachorro</option>
+        <option value="gato">Gato</option>
+      </select>
+      <select name="sexo" id="sexo">
+        <option value="sexo">Todos os sexos</option>
+        <option value="macho">Macho</option>
+        <option value="femea">Fêmea</option>
+      </select>
+      <select name="cidades" id="cidades">
+        <option value="cidades">Todas as cidades</option>
+        <option value="cidades">São Paulo</option>
+        <option value="cidades">Rio de Janeiro</option>
+        <option value="cidades">Curitiba</option>
+        <option value="cidades">Fortaleza</option>
+      </select>
+      <input type="submit" value="Buscar" class="buscar">
+    </form>
+  </div>
+  <section class="carrossel-imagens">
+    <div class="container-adocao owl-carousel">
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/cahorro-01.jpg"
+            alt="imagem de uma gatinho pequeno branco e olhos azuis"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Max</h3>
+        </a>
+        <p>São Paulo, São Paulo</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/gato-01.jpg"
+            alt="imagem de um cachorro de pelo marron e branco"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Minerva</h3>
+        </a>
+        <p>Curitiba, Paraná</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/cahorro-02.jpg"
+            alt="imagem de um gato rajado de pelos cinza preto e branco"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Pingo</h3>
+        </a>
+        <p>Niterói, Rio de janeiro</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/cahorro-03.jpg"
+            alt="imgem de um cachorro junior de cor cinza"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Totó</h3>
+        </a>
+        <p>Fortaleza, Ceará</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/gato-02.jpg"
+            alt="imagem de um cachorro de pelo alaranjado e branco"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Don</h3>
+        </a>
+        <p>Recife, Pernambuco</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/cahorro-04.jpg"
+            alt="imagem de um gato de cor amarelo e branco"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Bidú</h3>
+        </a>
+        <p>Goiânia, Goias</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/gato-03.jpg"
+            alt="imagem de um cachorro de cor marron e branco"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Aladdin</h3>
+        </a>
+        <p>Manaus, Amazonas</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/cahorro-05.jpg"
+            alt="imagem de um cachorro pequeno de cor branco"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Bob</h3>
+        </a>
+        <p>Macapá, Amapá</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img src="imagens/gato-04.jpg" alt="" />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Suzi</h3>
+        </a>
+        <p>Porto velho, Rondônia</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/cahorro-06.jpg"
+            alt="imagem de uma cachorra de pelos preto marron e branco"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Shenna</h3>
+        </a>
+        <p>Belém, Pará</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/cahorro-07.jpg"
+            alt="imagem de um cachorro pequenino de cor marron e barba branca"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Theo</h3>
+        </a>
+        <p>Florianópolis, Santa catarina</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/cahorro-08.jpg"
+            alt="imagem de um cachorro adulto de cor branco e parte de face marron"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Maylon</h3>
+        </a>
+        <p>Rio branco, Acre</p>
+      </div>
+    </div>
+    <div class="container-adocao">
+      <div class="container-photo-adocao cachorro macho">
+        <a href="formulario.html">
+          <img
+            src="imagens/cachorro-09.jpg"
+            alt="imagem de uma gatinho pequeno branco e olhos azuis"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Bruci</h3>
+        </a>
+        <p>São Paulo, São Paulo</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/gato-5.jpg"
+            alt="imagem de um cachorro de pelo marron e branco"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Diana</h3>
+        </a>
+        <p>Curitiba, Paraná</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/gato-6.jpg"
+            alt="imagem de um gato rajado de pelos cinza preto e branco"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Caramelo</h3>
+        </a>
+        <p>Niterói, Rio de janeiro</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/cachorro-10.jpg"
+            alt="imgem de um cachorro junior de cor cinza"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Ozzy</h3>
+        </a>
+        <p>Fortaleza, Ceará</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/gato-7.jpg"
+            alt="imagem de um cachorro de pelo alaranjado e branco"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Doug</h3>
+        </a>
+        <p>Recife, Pernambuco</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/cachorro-11.jpg"
+            alt="imagem de um gato de cor amarelo e branco"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Luna</h3>
+        </a>
+        <p>Goiânia, Goias</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/cachorro-12.jpg"
+            alt="imagem de um cachorro de cor marron e branco"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Toddy</h3>
+        </a>
+        <p>Manaus, Amazonas</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/gato-8.jpg"
+            alt="imagem de um cachorro pequeno de cor branco"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Atena</h3>
+        </a>
+        <p>Macapá, Amapá</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img src="imagens/cachorro-13.jpg" alt="" />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Simba</h3>
+        </a>
+        <p>Porto velho, Rondônia</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/gato-09.jpg"
+            alt="imagem de uma cachorra de pelos preto marron e branco"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Apolo</h3>
+        </a>
+        <p>Belém, Pará</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/gato-10.jpg"
+            alt="imagem de um cachorro pequenino de cor marron e barba branca"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Akila</h3>
+        </a>
+        <p>Florianópolis, Santa catarina</p>
+      </div>
+      <div class="container-photo-adocao">
+        <a href="formulario.html">
+          <img
+            src="imagens/cachorro-14.jpg"
+            alt="imagem de um cachorro adulto de cor branco e parte de face marron"
+          />
+        </a>
+        <a href="" class="nome-do-animal">
+          <h3>Chico</h3>
+        </a>
+        <p>Rio branco, Acre</p>
+      </div>
+    </div>
+  </section>
+    <!-- <button onclick="loadGallery()" id="botao" class="carregar-mais">Carregar mais</button>
+    <section  id="gallery"> -->
+    <div class="container-botao"><a href="pag02.html" class="carregar-mais">Próxima >></a></div>
+
+    </section>
+    <footer class="rodape">
+      <div class="logo-e-redes-sociais">
+        <div class="logo">
+          <a href="index.html">
+            <img src="imagens/logo-branca-oficial.png" alt="" />
+          </a> 
+        </div>
+        <div class="redes-sociais">
+          <ul>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-rodape">
+        <ul id="contato">
+          <li><a href="index.html" class="ativo">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="formulario.html">adotar</a></li>
+          <li><a href="quero-ajudar.html">Quero ajudar</a></li>
+        </ul>
+      </div>
+      <div class="direitos-reservados">
+        <a href="#adocao">Adotar agora</a>
+        <p>Tel: 99 999999</p>
+        <p>Todos os direitos-reservados</p>
+      </div>
+    </footer>
+  </body>
+</html>
